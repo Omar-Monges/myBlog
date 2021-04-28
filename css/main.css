@@ -5,7 +5,10 @@
 }
 body {
     font-size: 62.5%;
-    width: auto;
+    font-family: 'Roboto Mono', monospace;
+}
+.home {
+    width: 100%;
     height: 100vh;
 }
 .main-background {
@@ -23,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.5rem;
 }
 .home-main__title {
@@ -39,7 +42,7 @@ body {
     font-size: 1.1rem;
 }
 .ultima-noticia {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -65,10 +68,49 @@ body {
 .title-section--title {
     margin-bottom: 15px;
 }
-.title-section--more {
+.read-more {
     display: inline-block;
     text-decoration: none;
     border: 1px solid #48cfad;
     padding: 3px;
     margin-top: 20px;
+    color: #000;
+}
+.cards-container {
+    display: grid;
+    margin: 20px 0;
+    width: 100%;
+    grid-template: auto / repeat(3, 1fr);
+    gap: 10px;
+}
+.card {
+    margin: 5px;
+    min-width: 200px;
+    max-width: auto;
+    height: auto;
+}
+.img-container {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 250px;
+    max-height: 350px;
+    background-color: #8BCBF3;
+    border-radius: 15px;
+}
+footer {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    background-color: #48cfad;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    background-color: #2C2C34;
+    color: #fff;
+    font-size: 1.1rem;
 }
